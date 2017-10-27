@@ -1,0 +1,6 @@
+{
+	"database" : "~/.ttm/ttm.db",
+	"port" : "9999",
+	"user": "verkeev",
+	"password" : "pass"
+}
