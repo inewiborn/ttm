@@ -19,4 +19,7 @@ tasks = soup.findAll('div', {'class': 'task-wrapper'})
 
 for task in tasks:
     text = task.find('div', {'class': 'task-text'})
-    print(text.get_text())
+    #print(text.get_text())
+    project = task.find('div', {'class': 'trail'})
+    print(project.a['href'])
+    print(project.get_text())
