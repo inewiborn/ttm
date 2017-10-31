@@ -52,3 +52,9 @@ id_note
 start
 end
 time
+
+
+##### Зависимости
+beautifulsoup4
+lxml
+Flask
