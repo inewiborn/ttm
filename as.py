@@ -6,8 +6,13 @@ from requests.auth import HTTPBasicAuth
 
 from bs4 import BeautifulSoup
 
+from lib.app.Registry import Registry
 
-auth = HTTPBasicAuth('login', 'password')
+r = Registry()
+auth = HTTPBasicAuth(
+    r.get_option('login'),
+    r.get_option('password')
+)
 
 r = requests.post(url="https://office.techart.ru/home/tasks/", auth = auth)
 
